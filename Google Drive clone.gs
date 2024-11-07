@@ -384,7 +384,7 @@ function readStateFile_() {
 }
 //----------------------------------------------\\
 function writeStateFile_(content) {
-  let destFolder = DriveApp.getFolderById(sourceFolderId);
+  let destFolder = DriveApp.getFolderById(targetParentFolderId);
   let fileList = destFolder.getFilesByName(statefileFilename);
   if (fileList.hasNext()) {
     // State file exists - replace content
