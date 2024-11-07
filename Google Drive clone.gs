@@ -336,7 +336,7 @@ function copyFiles_(folder) {
         Logger.log("Failed copying file " + file.name + " " + error);
         file.destId = "FAILED";
         cloneJob.failures++;
-        cloneJob.failureList.push({ "name": sourceFile.getName(), "id": sourceFile.getId(), "message": error });
+        cloneJob.failureList.push({ "name": driveSourceFile.getName(), "id": driveSourceFile.getId(), "message": error });
       }
     }
   }
